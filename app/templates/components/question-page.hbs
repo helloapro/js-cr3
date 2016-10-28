@@ -3,7 +3,7 @@
   <h3>~ {{question.author}}</h3>
 </div>
 
-<h4>{{question.notes}}</h4>
+<h4 class="well">{{question.notes}}</h4>
 <hr>
 {{#each question.answers as |answer|}}
   {{answer-tile answer=answer}}
