@@ -5,19 +5,19 @@
 
   <div class="ui sidebar labeled icon top inverted menu">
     {{#link-to 'index'}}
-      <a class="item">
+      <a class="item" {{action 'click'}}>
         <i class="home icon"></i>
         Home
       </a>
     {{/link-to}}
-    <a class="item">
+    {{!-- <a class="item">
       <i class="block layout icon"></i>
       Topics
     </a>
     <a class="item">
       <i class="smile icon"></i>
       Friends
-    </a>
+    </a> --}}
   </div>
 
   {{outlet}}
