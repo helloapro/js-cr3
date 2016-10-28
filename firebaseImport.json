@@ -1,0 +1,14 @@
+{ "questions": [{
+    "author": "Veruca Salt",
+    "question": "Do I have a cold?",
+    "notes": "I can't tell if I have a cold or allergies. My symptoms include a scratchy throat, burning eyes and runny nose"
+  }, {
+    "author": "Mike TV",
+    "question": "Would you like a TV?",
+    "notes": "The answer is yes! Come down now for discounts up to 30%! It's a blowout!"
+  }, {
+    "author": "Tiki Torch Tom",
+    "question": "Is my head being on fire normal?",
+    "notes": "People say it is because of what I am. I wish people cared more also who I am..."
+  }]
+}
