@@ -1,0 +1,11 @@
+<form class="ui reply form answers-and-answer-box">
+  <div class="field">
+    {{input placeholder="Your name" value=author}}
+  </div>
+  <div class="field">
+    {{textarea placeholder="What are your thoughts?" value=answer}}
+  </div>
+  <div class="ui primary submit labeled icon button" {{action 'saveAnswer'}}>
+    <i class="icon edit"></i> Add your answer
+  </div>
+</form>
