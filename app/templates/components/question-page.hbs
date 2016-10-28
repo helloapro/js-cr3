@@ -4,3 +4,9 @@
 </div>
 
 <h4>{{question.notes}}</h4>
+<hr>
+{{#each question.answers as |answer|}}
+  {{answer-tile answer=answer}}
+  <br>
+{{/each}}
+<br>
