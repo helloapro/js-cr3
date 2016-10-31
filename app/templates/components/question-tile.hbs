@@ -4,19 +4,35 @@
       <img src="https://cdn.shopify.com/s/files/1/0922/5218/products/51UbxlwihvL._SL500_large.jpeg?v=1438118534">
     </div>
     <div class="content">
-      <a class="header">{{question.author}}</a>
-      <div class="meta">
-        <span class="date">Question asked on: some date</span>
-      </div>
+      <a class="header">{{#link-to 'question' question.id}}{{question.author}}'s question:{{/link-to}}</a>
       <div class="description">
-        {{question.question}}
+        {{#link-to 'question' question.id}}{{question.questioncontent}}{{/link-to}}
+      </div>
+      <div class="meta">
+        <span class="date">(Asked on - some date)</span>
       </div>
     </div>
     <div class="extra content">
-      <a>
-        <i class="user icon"></i>
-        number of answers
-      </a>
+      <div class="row">
+        <div class="col-sm-4">
+          <a>
+            <i class="user icon"></i>
+            number of answers
+          </a>
+        </div>
+        <div class="col-sm-8">
+          <div class="dropdown open">
+            <button class="btn btn-secondary btn-warning btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Edit question...
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item">
+                {{question-edit update="update" question=question}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

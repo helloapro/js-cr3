@@ -8,9 +8,7 @@
   </div>
   <div class="col-sm-10"> --}}
     {{#each model as |question|}}
-      {{#link-to 'question' question.id}}
         {{question-tile question=question update="update"}}
-      {{/link-to}}
     {{/each}}
   {{!-- </div> --}}
 </div>
