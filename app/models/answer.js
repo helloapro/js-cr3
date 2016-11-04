@@ -4,6 +4,7 @@ export default DS.Model.extend({
   author: DS.attr(),
   answercontent: DS.attr(),
   question: DS.belongsTo('question', { async: true }),
+  replies: DS.hasMany('reply', { async: true }),
   upvote: DS.attr('number'),
   downvote: DS.attr('number'),
   date: DS.attr('string'),
