@@ -5,9 +5,9 @@
     </a>
     <div class="content">
       <div class="ui buttons">
-        <button class="ui button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+        <button class="ui positive button" {{action 'upvoteAnswer' answer}}><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
         <div class="or"></div>
-        <button class="ui positive button"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+        <button class="ui button" {{action 'downvoteAnswer' answer}}><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
       </div>
       <a class="author">{{answer.author}}</a>
       <div class="metadata">
