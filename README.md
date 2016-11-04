@@ -1,7 +1,6 @@
-# Qand-a
+# QandA
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a Question and Answer application that brings people with questions and answers together. That's the idea... mainly right now it's a mad woman (github username: helloapro) rambling to herself and practicing Ember.
 
 ## Prerequisites
 
@@ -41,7 +40,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+You would have to pay to host my site because I have no intention at this juncture.
 
 ## Further Reading / Useful Links
 
@@ -51,3 +50,6 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Copyright
+
+2016 April Peng
