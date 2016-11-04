@@ -6,7 +6,10 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         questioncontent: this.get('questioncontent'),
-        notes: this.get('notes')
+        notes: this.get('notes'),
+        upvote: 0,
+        downvote: 0,
+        date: moment()
       };
       this.sendAction('saveQuestion', params);
     }
