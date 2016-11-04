@@ -9,7 +9,7 @@
         {{#link-to 'question' question.id}}{{question.questioncontent}}{{/link-to}}
       </div>
       <div class="meta">
-        <span class="date">(Asked on - some date)</span>
+        <span class="date">(Asked {{moment-from-now question.date}})</span>
       </div>
     </div>
     <div class="extra content">
@@ -17,7 +17,7 @@
         <div class="col-sm-4">
           <a>
             <i class="user icon"></i>
-            number of answers
+            {{question.answers.length}} answers
           </a>
         </div>
         <div class="col-sm-8">

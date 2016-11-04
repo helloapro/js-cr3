@@ -2,7 +2,7 @@
   <h2>{{question.questioncontent}}</h2>
   <h3>~ {{question.author}}</h3>
 </div>
-
+<p>Asked {{moment-from-now question.date}}</p>
 <h4 class="well">{{question.notes}}</h4>
 <hr>
 {{#each question.answers as |answer|}}
