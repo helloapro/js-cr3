@@ -1,4 +1,4 @@
-<div>
+{{!-- <div>
   <i class="smile icon"></i>
   Upvotes in this session ~
 </div>
@@ -13,4 +13,14 @@
 <div>
   <i class="quote right icon"></i>
   Questions answered ~
-</div>
+</div> --}}
+
+<ul>
+  {{#each userSession.answers as |answer|}}
+    <li>
+      {{answer.answercontent}}
+      <p>upvotes: {{answer.upvote}}</p>
+      <p>downvotes: {{answer.downvote}}</p>
+    </li>
+  {{/each}}
+</ul>

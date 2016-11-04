@@ -27,13 +27,22 @@ export default Ember.Service.extend({
   //   this.get('answers').pushObject(answer);
   // },
   downvoteAnswer(answer) {
-    this.get('answers').pushObject(answer);
-    answer.set('downvote', answer.get('downvote') + 1);
-    console.log(answer);
+    if(this.get('answers').indexOf(answer) === -1) {
+      this.get('answers').pushObject(answer);
+      answer.set('downvote', answer.get('downvote') + 1);
+      answer.save();
+    } else {
+      alert("you've already rated this answer! refresh the page to start a new session.");
+    }
   },
   upvoteAnswer(answer) {
-    this.get('answers').pushObject(answer);
-    answer.set('upvote', answer.get('upvote') + 1);
+    if(this.get('answers').indexOf(answer) === -1) {
+      this.get('answers').pushObject(answer);
+      answer.set('upvote', answer.get('upvote') + 1);
+      answer.save();
+    } else {
+      alert("you've already rated this answer! refresh the page to start a new session.");
+    }
     console.log(answer);
   }
 

@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   actions: {
     upvoteAnswer(answer) {
       this.get('userSession').upvoteAnswer(answer);
+    },
+    downvoteAnswer(answer) {
+      this.get('userSession').downvoteAnswer(answer);
     }
   }
 });
