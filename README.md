@@ -2,6 +2,16 @@
 
 This is a Question and Answer application that brings people with questions and answers together. That's the idea... mainly right now it's a mad woman (github username: helloapro) rambling to herself and practicing Ember.
 
+## CREDITS TO ARTISTS:
+* Icon made by http://www.flaticon.com/authors/madebyoliver from www.flaticon.com
+* Avatar art borrowed from Joe Vaux: http://www.joevaux.com/
+
+## Other tools and packages used
+* Semantic UI
+* Font Awesome
+* Bootstrap
+* Moment
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
