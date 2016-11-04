@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       };
       this.sendAction('saveAnswer', params);
       this.set('author', '');
-      this.set('answer', '');
+      this.set('answercontent', '');
     }
   }
 });
