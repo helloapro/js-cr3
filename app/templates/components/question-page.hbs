@@ -5,7 +5,16 @@
 <p>Asked {{moment-from-now question.date}}</p>
 <h4 class="well">{{question.notes}}</h4>
 <hr>
-{{#each question.answers as |answer|}}
+<div class="answer-filter">
+  <select class="form-control" id="sortedAnswers" {{action 'updateSort' on='change'}}>
+   <option value="date:desc">Most Recent</option>
+   <option value="date:asc">Oldest First</option>
+   <option value="ranking:desc">Most liked</option>
+   <option value="ranking:asc">Least Favorite</option>
+ </select>
+</div>
+<br>
+{{#each sortedAnswers as |answer|}}
   {{answer-tile answer=answer}}
   <br>
 {{/each}}
