@@ -12,5 +12,8 @@ export default DS.Model.extend({
   ranking: Ember.computed('upvote', 'downvote', function() {
     return parseInt(this.get('upvote') - this.get('downvote'));
   }),
+  numberOfRatings: Ember.computed('upvote', 'downvote', function() {
+    return parseInt(this.get('upvote') + this.get('downvote'));
+  }),
   userSession: Ember.inject.service()
 });

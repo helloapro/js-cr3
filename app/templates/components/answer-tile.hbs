@@ -9,9 +9,9 @@
         <div class="or"></div>
         <button class="ui button" {{action 'downvoteAnswer' answer}}><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
       </div>
-      <a class="author">{{answer.author}}</a>
+      <a class="author">{{answer.author}}</a> {{hot answer.numberOfRatings}} 
       <div class="metadata">
-        <div class="date">{{moment-from-now answer.date}}</div>
+        <div class="date">{{moment-from-now answer.date}} - overall ranking: {{answer.ranking}}</div>
       </div>
       <div class="text">
         {{answer.answercontent}}
