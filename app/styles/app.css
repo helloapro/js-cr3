@@ -1,5 +1,9 @@
+h2 img {
+  width: 2em;
+}
+
 .web-title {
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
 .image-key p{
@@ -22,7 +26,7 @@
 }
 
 .answer-filter {
-  width: 50%;
+  width: 25%;
   margin-left: 20%;
 }
 

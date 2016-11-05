@@ -1,12 +1,6 @@
+
+
 {{!-- <div>
-  <i class="smile icon"></i>
-  Upvotes in this session ~
-</div>
-<div>
-  <i class="frown icon"></i>
-  Downvotes in this session ~
-</div>
-<div>
   <i class="quote left icon"></i>
   Questions asked ~
 </div>
@@ -15,12 +9,30 @@
   Questions answered ~
 </div> --}}
 
-<ul>
-  {{#each userSession.answers as |answer|}}
-    <li>
-      {{answer.answercontent}}
-      <p>upvotes: {{answer.upvote}}</p>
-      <p>downvotes: {{answer.downvote}}</p>
-    </li>
-  {{/each}}
-</ul>
+<div>
+  Your activity:
+  <div class="row">
+    <div class="col-sm-6">
+      <div>
+        <i class="smile icon"></i>
+        Upvotes in this session ~ {{userSession.upvoteCount}}
+      </div>
+      <div>
+        <i class="frown icon"></i>
+        Downvotes in this session ~ {{userSession.downvoteCount}}
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <!-- {{#each userSession.answers as |answer|}}
+        <div>
+          <i class="smile icon"></i>
+          Upvotes in this session ~ {{answer.upvote}}
+        </div>
+        <div>
+          <i class="frown icon"></i>
+          Downvotes in this session ~ {{answer.downvote}}
+        </div>
+      {{/each}} -->
+    </div>
+  </div>
+</div>

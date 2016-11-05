@@ -4,6 +4,9 @@ export default Ember.Service.extend({
   // loggedIn: false,
   // questions: [],
   answers: [],
+  upvoteCount: 0,
+  downvoteCount: 0,
+
   // replies: [],
 
   // login() {
@@ -31,6 +34,7 @@ export default Ember.Service.extend({
       this.get('answers').pushObject(answer);
       answer.set('downvote', answer.get('downvote') + 1);
       answer.save();
+      this.set('downvoteCount', this.get('downvoteCount') + 1);
     } else {
       alert("you've already rated this answer! refresh the page to start a new session.");
     }
@@ -40,6 +44,7 @@ export default Ember.Service.extend({
       this.get('answers').pushObject(answer);
       answer.set('upvote', answer.get('upvote') + 1);
       answer.save();
+      this.set('upvoteCount', this.get('upvoteCount') + 1);
     } else {
       alert("you've already rated this answer! refresh the page to start a new session.");
     }

@@ -1,5 +1,6 @@
 <div class="container">
   <br>
+  {{user-session-display}}
   <div class="jumbotron">
     <button class="btn btn-info" name="button" {{action 'click'}}>Toggle</button>
     <div class="text-center">
@@ -16,7 +17,6 @@
   </div>
   <hr>
 
-  {{user-session-display}}
 
   <div class="ui sidebar labeled icon top inverted menu">
     {{#link-to 'index'}}
@@ -25,14 +25,6 @@
         Home
       </a>
     {{/link-to}}
-    {{!-- <a class="item">
-      <i class="block layout icon"></i>
-      Topics
-    </a>
-    <a class="item">
-      <i class="smile icon"></i>
-      Friends
-    </a> --}}
   </div>
 
   {{outlet}}
